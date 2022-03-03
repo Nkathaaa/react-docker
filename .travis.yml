@@ -8,4 +8,4 @@ before_install:
   - docker build -t testsetup -f Dockerfile.dev .
 
 script:
-  - -docker run  testsetup  npm run test  -- --coverage
+  - docker run  testsetup  npm run test  -- --coverage
